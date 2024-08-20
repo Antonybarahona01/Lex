@@ -92,3 +92,87 @@ Desarrollar un programa en LEX que traduzca palabras o frases sencillas de ingle
 5. Para guardar el archivo en el editor, presionar `Ctrl + O`. Confirmar el nombre del archivo en la parte inferior y presionar Enter.
 6. La terminal mostrará una confirmación del número de líneas escritas en el archivo. Después de verificar, presionar `Ctrl + X` para salir del editor de texto.
 7. El archivo `ejemplo1.txt` estará ahora creado y listo para su uso.
+
+## Ejecución de la Tarea
+Una vez creados todos los archivos, la carpeta personal debería contener los siguientes documentos:
+1. Un archivo llamado `traductor` (el ejecutable).
+2. Un archivo llamado `traductor.l`.
+3. Un archivo llamado `lex.yy.c`.
+4. Un archivo llamado `ejemplo1.txt`.
+
+Para ejecutar el programa:
+1. Abrir una nueva terminal con el comando `Ctrl + T`.
+2. En la terminal, ingresar `./traductor ejemplo1.txt` y presionar Enter.
+3. Verificar los resultados proporcionados por el programa.
+
+### Tarea 3: Reconocer símbolos y caracteres de la calculadora
+Desarrollar un programa en LEX que reconozca los números, símbolos y caracteres de una calculadora.
+
+#### Guía para la Creación del Archivo `Traductor.l`
+1. Abrir una nueva terminal presionando `Ctrl + Alt + T`.
+2. Ingresar el comando `nano calculadora.l` y presionar Enter para abrir el editor de texto Nano.
+3. Copiar el código del archivo `calculadora.l` (disponible en el repositorio, carpeta Punto 3) y pegarlo en el editor de texto.
+   - Si los comandos `Ctrl + C` y `Ctrl + V` no funcionan para copiar y pegar, seleccionar el código con el botón izquierdo del mouse, copiar el contenido haciendo clic derecho y eligiendo "Copiar".
+4. Con el código copiado al portapapeles, volver a la terminal y pegar el código presionando clic derecho y seleccionando "Pegar".
+5. Para guardar el archivo en el editor, presionar `Ctrl + O`. Confirmar el nombre del archivo en la parte inferior y presionar Enter.
+6. La terminal mostrará una confirmación del número de líneas escritas en el archivo. Después de verificar, presionar `Ctrl + X` para salir del editor de texto.
+7. El archivo `calculadora.l` estará ahora creado.
+8. En la misma terminal, utilizar los comandos `flex calculadora.l` y luego `gcc lex.yy.c -o calculadora -lfl` para generar un ejecutable llamado `calculadora`.
+
+#### Guía para la Creación del Archivo `ejemplo1.txt` (Archivo de Argumento)
+1. Abrir una nueva terminal presionando `Ctrl + Alt + T`.
+2. Ingresar el comando `nano ejemplo1.txt` y presionar Enter para abrir el editor de texto Nano.
+3. Copiar el contenido del archivo `ejemplo1.txt` (o cualquier ejemplo disponible en el repositorio, carpeta Punto 1) y pegarlo en el editor de texto.
+   - Si los comandos `Ctrl + C` y `Ctrl + V` no funcionan, seleccionar el contenido con el botón izquierdo del mouse, copiarlo haciendo clic derecho y eligiendo "Copiar".
+4. Con el contenido copiado al portapapeles, volver a la terminal y pegar el contenido presionando clic derecho y seleccionando "Pegar".
+5. Para guardar el archivo en el editor, presionar `Ctrl + O`. Confirmar el nombre del archivo en la parte inferior y presionar Enter.
+6. La terminal mostrará una confirmación del número de líneas escritas en el archivo. Después de verificar, presionar `Ctrl + X` para salir del editor de texto.
+7. El archivo `ejemplo1.txt` estará ahora creado y listo para su uso.
+
+## Ejecución de la Tarea
+Una vez creados todos los archivos, la carpeta personal debería contener los siguientes documentos:
+1. Un archivo llamado `calculadora` (el ejecutable).
+2. Un archivo llamado `calculadora.l`.
+3. Un archivo llamado `lex.yy.c`.
+4. Un archivo llamado `ejemplo1.txt`.
+
+Para ejecutar el programa:
+1. Abrir una nueva terminal con el comando `Ctrl + T`.
+2. En la terminal, ingresar `./calculadora ejemplo1.txt` y presionar Enter.
+3. Verificar los resultados proporcionados por el programa.
+
+### Tarea 4: Reconocimiento de tokens
+Desarrollar un programa en LEX que reconozca tokens específicos e imprimir sus valores.
+
+#### Guía para la Creación del Archivo `Tokens.l`
+1. Abrir una nueva terminal presionando `Ctrl + Alt + T`.
+2. Ingresar el comando `nano tokens.l` y presionar Enter para abrir el editor de texto Nano.
+3. Copiar el código del archivo `calculadora.l` (disponible en el repositorio, carpeta Punto 3) y pegarlo en el editor de texto.
+   - Si los comandos `Ctrl + C` y `Ctrl + V` no funcionan para copiar y pegar, seleccionar el código con el botón izquierdo del mouse, copiar el contenido haciendo clic derecho y eligiendo "Copiar".
+4. Con el código copiado al portapapeles, volver a la terminal y pegar el código presionando clic derecho y seleccionando "Pegar".
+5. Para guardar el archivo en el editor, presionar `Ctrl + O`. Confirmar el nombre del archivo en la parte inferior y presionar Enter.
+6. La terminal mostrará una confirmación del número de líneas escritas en el archivo. Después de verificar, presionar `Ctrl + X` para salir del editor de texto.
+7. El archivo `tokens.l` estará ahora creado.
+8. En la misma terminal, utilizar los comandos `flex tokens.l` y luego `gcc lex.yy.c -o tokens -lfl` para generar un ejecutable llamado `tokens`.
+
+#### Guía para la Creación del Archivo `ejemplo1.txt` (Archivo de Argumento)
+1. Abrir una nueva terminal presionando `Ctrl + Alt + T`.
+2. Ingresar el comando `nano ejemplo1.txt` y presionar Enter para abrir el editor de texto Nano.
+3. Copiar el contenido del archivo `ejemplo1.txt` (o cualquier ejemplo disponible en el repositorio, carpeta Punto 1) y pegarlo en el editor de texto.
+   - Si los comandos `Ctrl + C` y `Ctrl + V` no funcionan, seleccionar el contenido con el botón izquierdo del mouse, copiarlo haciendo clic derecho y eligiendo "Copiar".
+4. Con el contenido copiado al portapapeles, volver a la terminal y pegar el contenido presionando clic derecho y seleccionando "Pegar".
+5. Para guardar el archivo en el editor, presionar `Ctrl + O`. Confirmar el nombre del archivo en la parte inferior y presionar Enter.
+6. La terminal mostrará una confirmación del número de líneas escritas en el archivo. Después de verificar, presionar `Ctrl + X` para salir del editor de texto.
+7. El archivo `ejemplo1.txt` estará ahora creado y listo para su uso.
+
+## Ejecución de la Tarea
+Una vez creados todos los archivos, la carpeta personal debería contener los siguientes documentos:
+1. Un archivo llamado `tokens` (el ejecutable).
+2. Un archivo llamado `tokens.l`.
+3. Un archivo llamado `lex.yy.c`.
+4. Un archivo llamado `ejemplo1.txt`.
+
+Para ejecutar el programa:
+1. Abrir una nueva terminal con el comando `Ctrl + T`.
+2. En la terminal, ingresar `./tokens ejemplo1.txt` y presionar Enter.
+3. Verificar los resultados proporcionados por el programa.
