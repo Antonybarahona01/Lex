@@ -8,7 +8,7 @@ Este repositorio contiene la solución para cinco tareas desarrolladas en Flex, 
 
 ## Antes de Empezar
 1. **Verificar la Instalación de Flex o Lex:**
-   - Abrir una terminal en Kali Linux utilizando el atajo `Ctrl + T`.
+   - Abrir una terminal en Kali Linux utilizando el atajo `Ctrl + Alt + T`.
    - En la terminal, ingresar el comando `flex --version`. Esto mostrará la versión de Flex instalada (en este caso, se espera la versión 2.6.4).
 
 2. **Instalar Flex o Lex:**
