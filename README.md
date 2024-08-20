@@ -68,3 +68,27 @@ Para ejecutar el programa:
 1. Abrir una nueva terminal con el comando `Ctrl + T`.
 2. En la terminal, ingresar `./contador ejemplo1.txt` y presionar Enter.
 3. Verificar los resultados proporcionados por el programa.
+
+### Tarea 2: Traductor de Ingles a Español
+Desarrollar un programa en LEX que traduzca palabras o frases sencillas de ingles a español.
+
+#### Guía para la Creación del Archivo `Traductor.l`
+1. Abrir una nueva terminal presionando `Ctrl + Alt + T`.
+2. Ingresar el comando `nano traductor.l` y presionar Enter para abrir el editor de texto Nano.
+3. Copiar el código del archivo `traductor.l` (disponible en el repositorio, carpeta Punto 2) y pegarlo en el editor de texto.
+   - Si los comandos `Ctrl + C` y `Ctrl + V` no funcionan para copiar y pegar, seleccionar el código con el botón izquierdo del mouse, copiar el contenido haciendo clic derecho y eligiendo "Copiar".
+4. Con el código copiado al portapapeles, volver a la terminal y pegar el código presionando clic derecho y seleccionando "Pegar".
+5. Para guardar el archivo en el editor, presionar `Ctrl + O`. Confirmar el nombre del archivo en la parte inferior y presionar Enter.
+6. La terminal mostrará una confirmación del número de líneas escritas en el archivo. Después de verificar, presionar `Ctrl + X` para salir del editor de texto.
+7. El archivo `traductor.l` estará ahora creado.
+8. En la misma terminal, utilizar los comandos `flex traductor.l` y luego `gcc lex.yy.c -o traductor -lfl` para generar un ejecutable llamado `traductor`.
+
+#### Guía para la Creación del Archivo `ejemplo1.txt` (Archivo de Argumento)
+1. Abrir una nueva terminal presionando `Ctrl + Alt + T`.
+2. Ingresar el comando `nano ejemplo1.txt` y presionar Enter para abrir el editor de texto Nano.
+3. Copiar el contenido del archivo `ejemplo1.txt` (o cualquier ejemplo disponible en el repositorio, carpeta Punto 1) y pegarlo en el editor de texto.
+   - Si los comandos `Ctrl + C` y `Ctrl + V` no funcionan, seleccionar el contenido con el botón izquierdo del mouse, copiarlo haciendo clic derecho y eligiendo "Copiar".
+4. Con el contenido copiado al portapapeles, volver a la terminal y pegar el contenido presionando clic derecho y seleccionando "Pegar".
+5. Para guardar el archivo en el editor, presionar `Ctrl + O`. Confirmar el nombre del archivo en la parte inferior y presionar Enter.
+6. La terminal mostrará una confirmación del número de líneas escritas en el archivo. Después de verificar, presionar `Ctrl + X` para salir del editor de texto.
+7. El archivo `ejemplo1.txt` estará ahora creado y listo para su uso.
