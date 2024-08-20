@@ -1,0 +1,5 @@
+Este es un texto más complejo.
+Incluye varias líneas de texto, con:
+- Números: 123, 456, 789
+- Símbolos especiales: !@#$%^&*()_+
+¿Puedes contar todas las líneas, palabras y caracteres?

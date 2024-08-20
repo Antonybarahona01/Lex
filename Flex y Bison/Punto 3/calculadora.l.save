@@ -1,0 +1,49 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+%}
+
+// Reglas de coincidencia
+%%
+
+[0-9]+\.[0-9]+   { printf("NÚMERO (decimal): %s\n", yytext); }  // Coincide con números decimales (ej. 3.14)
+[0-9]+           { printf("NÚMERO (entero): %s\n", yytext); }   // Coincide con números enteros (ej. 42)
+\+               { printf("OPERADOR (suma): %s\n", yytext); }    // Coincide con el operador de suma '+'
+\-               { printf("OPERADOR (resta): %s\n", yytext); }   // Coincide con el operador de resta '-'
+\*               { printf("OPERADOR (multiplicación): %s\n", yytext); } // Coincide con el operador de multiplicación '*'
+\/               { printf("OPERADOR (división): %s\n", yytext); } // Coincide con el operador de división '/'
+\^               { printf("OPERADOR (exponenciación): %s\n", yytext); } // Coincide con el operador de exponenciación '^'
+\%               { printf("OPERADOR (módulo): %s\n", yytext); }    // Coincide con el operador de módulo '%'
+\(               { printf("PARENTESIS (izquierdo): %s\n", yytext); } // Coincide con el paréntesis izquierdo '('
+\)               { printf("PARENTESIS (derecho): %s\n", yytext); } // Coincide con el paréntesis derecho ')'
+[ \t\n\r]+       { /* Ignorar espacios en blanco */ }
+.                { printf("CARACTER DESCONOCIDO: %s\n", yytext); } // Coincide con cualquier otro carácter
+
+%%
+
+int main(int argc, char **argv) {
+    if (argc > 1) {
+        FILE *file = fopen(argv[1], "r");
+        if (!file) {
+            perror("Error abriendo el archivo");
+            return 1;
+        }
+        yyin = file;
+    } else {
+        fprintf(stderr, "Uso: %s <archivo>\n", argv[0]);
+        return 1;
+    }
+
+    yylex(); // Ejecuta el análisis léxico
+
+    if (argc > 1) {
+        fclose(yyin);
+    }
+
+    return 0;
+}
+
+int yywrap() {
+    return 1; // Indica que no hay más archivos para procesar
+}
